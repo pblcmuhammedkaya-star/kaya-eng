@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaya Engineering Co. | B2B Sourcing</title>
+    <meta name="description" content="Bridging Turkish Manufacturing Excellence with European Engineering. Specialized in technical procurement and zero-inventory supply.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Montserrat 900 for Logo, Oswald for Headings, Roboto for Body -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-navy': '#0B1B3D',
+                        'brand-blue': '#1A4B8F',
+                        'brand-light': '#F4F7F9',
+                        'brand-slate': '#64748B'
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                        display: ['Oswald', 'sans-serif'],
+                        logo: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Smooth Fade-In Animation on Scroll */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            will-change: opacity, visibility;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: none;
+        }
+        /* Heavy Industry checkmark styling */
+        .heavy-check {
+            color: #1A4B8F;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 font-sans antialiased selection:bg-brand-blue selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <div class="flex flex-col">
+                        <span class="text-3xl font-logo font-black text-brand-navy tracking-tighter leading-none uppercase">KAYA</span>
+                        <span class="text-[0.65rem] font-display font-medium text-brand-slate tracking-[0.2em] leading-none mt-1 uppercase">Engineering Co.</span>
+                    </div>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-10">
+                    <a href="#about" class="text-sm font-medium text-gray-600 hover:text-brand-blue transition-colors">About Us</a>
+                    <a href="#sectors" class="text-sm font-medium text-gray-600 hover:text-brand-blue transition-colors">Core Sectors</a>
+                    <a href="#advantages" class="text-sm font-medium text-gray-600 hover:text-brand-blue transition-colors">Why Kaya?</a>
+                    <a href="#contact" class="px-6 py-2.5 text-sm font-medium text-white bg-brand-navy hover:bg-brand-blue rounded-sm shadow-md transition-colors uppercase tracking-wider">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-28 pb-12 lg:pt-36 lg:pb-24 bg-brand-light overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
+                
+                <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left fade-in-section">
+                    <div class="inline-flex items-center px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-6">
+                        <span class="block w-2 h-2 rounded-full bg-brand-blue mr-2"></span>
+                        <span class="text-xs font-bold text-brand-blue tracking-wide uppercase font-display">B2B Export Agency</span>
+                    </div>
+                    <h1 class="text-4xl tracking-tight font-display font-bold text-brand-navy sm:text-5xl md:text-6xl lg:leading-[1.1] uppercase">
+                        Turkish Precision.<br><span class="text-brand-blue">European Engineering.</span>
+                    </h1>
+                    <p class="mt-6 text-base text-gray-600 sm:text-lg sm:max-w-xl sm:mx-auto lg:mx-0 font-light leading-relaxed">
+                        We are a specialized zero-inventory procurement agency connecting Europe's purchasing managers directly to high-capacity manufacturing hubs. Fast, compliant, and rock-solid.
+                    </p>
+                    <div class="mt-8 sm:flex sm:justify-center lg:justify-start gap-4">
+                        <a href="#contact" class="flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-sm text-white bg-brand-navy hover:bg-brand-blue shadow-lg transition-colors md:text-lg uppercase font-display tracking-wider">
+                            Request a Quote
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:h-full fade-in-section">
+                    <div class="relative mx-auto w-full rounded-sm shadow-2xl lg:max-w-md overflow-hidden border-4 border-white">
+                        <img class="w-full h-full object-cover grayscale-[20%]" src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200" alt="Precision Engineering">
+                        <div class="absolute inset-0 bg-brand-navy/10 mix-blend-multiply"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fade-in-section">
+            <div class="lg:text-center mb-16">
+                <h2 class="text-sm text-brand-blue font-bold tracking-widest uppercase font-display">Company Profile</h2>
+                <p class="mt-2 text-3xl leading-8 font-display font-bold tracking-tight text-brand-navy sm:text-4xl uppercase">
+                    The Zero-Inventory Advantage
+                </p>
+                <div class="mt-4 w-20 h-1 bg-brand-blue mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="rounded-sm overflow-hidden shadow-xl border-4 border-gray-50">
+                    <img src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&q=80&w=1000" alt="Industrial Facility" class="w-full h-auto object-cover">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-display font-bold text-brand-navy mb-4 uppercase">Lean, Agile, and Direct</h3>
+                    <p class="text-gray-600 mb-6 font-light leading-relaxed">
+                        Kaya Engineering Co. operates differently. As an agile export agency founded by engineering professionals, we act as your direct supply chain extension. By eliminating warehouse overhead, we source precisely what you need directly from certified factory floors.
+                    </p>
+                    <ul class="space-y-5">
+                        <li class="flex items-center bg-brand-light p-4 rounded-sm border-l-4 border-brand-blue">
+                            <div class="flex-shrink-0">
+                                <!-- Solid heavy-duty checkmark -->
+                                <svg class="h-7 w-7 heavy-check" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                            </div>
+                            <p class="ml-4 text-base text-gray-800 font-medium">Direct factory-to-buyer logistics mapping.</p>
+                        </li>
+                        <li class="flex items-center bg-brand-light p-4 rounded-sm border-l-4 border-brand-blue">
+                            <div class="flex-shrink-0">
+                                <svg class="h-7 w-7 heavy-check" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                            </div>
+                            <p class="ml-4 text-base text-gray-800 font-medium">Strict EN/DIN standard compliance checks.</p>
+                        </li>
+                        <li class="flex items-center bg-brand-light p-4 rounded-sm border-l-4 border-brand-blue">
+                            <div class="flex-shrink-0">
+                                <svg class="h-7 w-7 heavy-check" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                            </div>
+                            <p class="ml-4 text-base text-gray-800 font-medium">Seamless cross-border technical communication.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Sectors Grid -->
+    <section id="sectors" class="py-20 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-section">
+                <h2 class="text-sm text-brand-blue font-bold tracking-widest uppercase font-display">Our Expertise</h2>
+                <p class="mt-2 text-3xl leading-8 font-display font-bold tracking-tight text-brand-navy sm:text-4xl uppercase">
+                    Core Export Sectors
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Sector 1 -->
+                <div class="bg-white rounded-sm shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden fade-in-section">
+                    <div class="h-56 overflow-hidden bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=800" alt="Fiber Optics and Telecom Server Rack" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6 border-t-4 border-brand-blue">
+                        <h3 class="text-xl font-display font-bold text-brand-navy mb-3 uppercase">Telecom & Fiber Optics</h3>
+                        <p class="text-gray-600 font-light text-sm leading-relaxed">
+                            Sourcing high-grade optical network hardware, structural telecom site elements, and communication infrastructure components tailored to European broadband deployments.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Sector 2 -->
+                <div class="bg-white rounded-sm shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden fade-in-section" style="transition-delay: 100ms;">
+                    <div class="h-56 overflow-hidden bg-gray-200">
+                        <!-- Replaced with a heavy-duty industrial milling machine image, no coin-like parts -->
+                        <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800" alt="Heavy Duty CNC Milling Machine" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6 border-t-4 border-brand-blue">
+                        <h3 class="text-xl font-display font-bold text-brand-navy mb-3 uppercase">Precision CNC Machining</h3>
+                        <p class="text-gray-600 font-light text-sm leading-relaxed">
+                            Leveraging industrial manufacturing hubs to procure ISO-certified milled and turned parts. Exacting tolerances in aluminum, steel, and advanced heavy alloys.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Sector 3 -->
+                <div class="bg-white rounded-sm shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden fade-in-section" style="transition-delay: 200ms;">
+                    <div class="h-56 overflow-hidden bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1533750516457-a7f992034fec?auto=format&fit=crop&q=80&w=800" alt="Industrial Metal Components" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6 border-t-4 border-brand-blue">
+                        <h3 class="text-xl font-display font-bold text-brand-navy mb-3 uppercase">Industrial Components</h3>
+                        <p class="text-gray-600 font-light text-sm leading-relaxed">
+                            From forged steel elements to specialized mechanical assemblies, we supply the heavy-duty components essential for European machinery and structural engineering.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section (Advantages) -->
+    <section id="advantages" class="py-20 bg-brand-navy text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fade-in-section">
+            <div class="lg:text-center mb-16">
+                <h2 class="text-sm text-brand-blue font-bold tracking-widest uppercase font-display">Solid Foundation</h2>
+                <p class="mt-2 text-3xl leading-8 font-display font-bold tracking-tight text-white sm:text-4xl uppercase">
+                    Why Partner with Kaya?
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="text-center p-6 bg-white/5 rounded-sm border border-white/10">
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-brand-blue text-white mx-auto mb-6">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-display font-bold mb-3 uppercase">Uncompromising Quality</h3>
+                    <p class="text-gray-300 font-light text-sm">We speak the language of engineers. Every supplier is vetted to meet rigorous European quality controls before export.</p>
+                </div>
+
+                <div class="text-center p-6 bg-white/5 rounded-sm border border-white/10">
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-brand-blue text-white mx-auto mb-6">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-display font-bold mb-3 uppercase">Direct Sourcing</h3>
+                    <p class="text-gray-300 font-light text-sm">By operating in the heart of Turkey's manufacturing zones, we cut out middlemen, delivering significant cost advantages.</p>
+                </div>
+
+                <div class="text-center p-6 bg-white/5 rounded-sm border border-white/10">
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-brand-blue text-white mx-auto mb-6">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-display font-bold mb-3 uppercase">Fast & Agile Logistics</h3>
+                    <p class="text-gray-300 font-light text-sm">Our zero-inventory model means we respond dynamically to your demands, streamlining the export process to your facility.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="bg-gray-900 pt-16 pb-8 border-t-4 border-brand-blue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fade-in-section">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Brand Info -->
+                <div class="lg:col-span-2">
+                    <div class="flex flex-col mb-4">
+                        <span class="text-4xl font-logo font-black text-white tracking-tighter leading-none uppercase">KAYA</span>
+                        <span class="text-[0.70rem] font-display font-medium text-brand-slate tracking-[0.2em] leading-none mt-2 uppercase">Engineering Co.</span>
+                    </div>
+                    <p class="text-gray-400 font-light text-sm leading-relaxed max-w-sm mt-4">
+                        Your trusted technical sourcing partner bridging Turkish manufacturing capability with European mechanical engineering sectors.
+                    </p>
+                </div>
+
+                <!-- Contact Detail -->
+                <div>
+                    <h4 class="text-white font-display font-bold uppercase tracking-wider mb-5 text-sm border-b border-gray-700 pb-2">Contact Details</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-center text-gray-400 text-sm font-medium">
+                            <svg class="h-5 w-5 mr-3 text-brand-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <a href="mailto:m.kaya@kaya-eng.com" class="hover:text-white transition-colors">m.kaya@kaya-eng.com</a>
+                        </li>
+                        <li class="flex items-center text-gray-400 text-sm font-medium">
+                            <svg class="h-5 w-5 mr-3 text-brand-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span>Isparta, Turkey</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Leadership -->
+                <div>
+                    <h4 class="text-white font-display font-bold uppercase tracking-wider mb-5 text-sm border-b border-gray-700 pb-2">Leadership</h4>
+                    <p class="text-gray-200 font-bold text-base uppercase">Muhammed Kaya</p>
+                    <p class="text-gray-500 font-light text-sm mt-1">Managing Director<br>B.Sc. Electronics & Communication Engineering</p>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="flex flex-col md:flex-row md:items-center space-y-3 md:space-y-0 text-gray-500 text-xs font-light">
+                    <span>&copy; <script>document.write(new Date().getFullYear())</script> Kaya Engineering Co. All rights reserved.</span>
+                    <span class="hidden md:inline mx-4 text-gray-700">|</span>
+                    <div class="flex space-x-6 mt-2 md:mt-0 font-medium">
+                        <!-- Mandatory Legal Links for European B2B -->
+                        <a href="#" class="hover:text-white transition-colors uppercase tracking-wider">Legal Notice</a>
+                        <a href="#" class="hover:text-white transition-colors uppercase tracking-wider">Global Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="mt-6 md:mt-0">
+                    <p class="text-gray-600 text-xs font-bold uppercase tracking-[0.2em]">
+                        B2B Technical Export Agency
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Intersection Observer for Fade-In Animation -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in-section').forEach((section) => {
+                observer.observe(section);
+            });
+        });
+    </script>
+
+</body>
+</html>
